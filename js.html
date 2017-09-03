@@ -1,0 +1,54 @@
+<html>
+<head><title>Task 1</title></html>
+<body bgcolor="yellow">
+
+<div style="background-color:green;height:350px;width:700px;position:absolute;left:200px;top:50px">
+
+<h1 style="color:yellow;position:absolute;left:260px"><font face="Arial Black">CALCULATOR</font></h1><br><h1 style="color:white;position:absolute;left:200px;top:50px">By Harkirat Singh Saran</h1>
+
+<h2 style="color:white;position:absolute;top:100px;left:20px">A: <input type="text" style="position:absolute;top:06px;left:280px" id="a">
+
+<h2 style="color:white;position:absolute;top:140px;left:20px">B: <input type="text" style="position:absolute;top:06px;left:280px" id="b"><br><br>
+<hr width = "665px" height = "90px">
+
+<h2 style="color:white;position:absolute;top:230px;left:20px">Result: <input type="text" style="position:absolute;top:6px;left:280px" id="c">
+
+
+<input type="radio" style="position:absolute;left:550px;top:-16px" onclick="a()"><h4  style="position:absolute;left:600px;top:220px;color:white">Average</h4>
+<br>
+<input type="radio" style="position:absolute;left:570px;top:280px" onclick="b()"><h4  style="position:absolute;left:600px;top:258px;color:white">Larger</h4>
+
+<input type="radio" style="position:absolute;left:570px;top:310px" onclick="c()"><h4  style="position:absolute;left:600px;top:288px;color:white">Reset</h4>
+
+<script>
+function a()
+{
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+var c=(parseInt(a)+parseInt(b))/2;
+document.getElementById("c").value=c;
+}
+function b()
+{
+var a=document.getElementById("a").value;
+var b=document.getElementById("b").value;
+if(a>b)
+{
+document.getElementById("c").value="A is greater";
+}
+else
+{
+document.getElementById("c").value="B is greater";
+}
+
+}
+function c()
+{
+document.getElementById("a").value="0";
+document.getElementById("b").value="0";
+document.getElementById("c").value="0";
+
+
+}
+</script>
+</html>
